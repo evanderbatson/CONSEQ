@@ -65,12 +65,12 @@ void ofApp::drawMenu() {
 
 void ofApp::chapterCut(float chapterBeginning, float chapterEnd){
     float chapterRandom = ofRandom(chapterBeginning, chapterEnd);
-    cout << "SEQ set to: " << chapterRandom << endl;
+    cout << "SEQ set to: " << chapterRandom*100 << "%" << endl;
     video.setPosition(chapterRandom);
 }
 
 void ofApp::setSeq(float seqPosition){
-    cout << "SEQ set to: " << seqPosition << endl;
+    cout << "SEQ set to: " << seqPosition*100 << "%" << endl;
     video.setPosition(seqPosition);
 }
 
