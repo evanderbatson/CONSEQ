@@ -74,6 +74,12 @@ void ofApp::setSeq(float seqPosition){
     video.setPosition(seqPosition);
 }
 
+void ofApp::setSeqRandom(){
+    float random = ofRandom(0,1);
+    cout << "SEQ set to: " << random*100 << "%" << endl;
+    video.setPosition(random);
+}
+
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     
@@ -165,7 +171,7 @@ void ofApp::keyPressed(int key){
     //etc Q-P
     
     if (key == 'a') {
-        //random cut entire sequence
+        setSeqRandom();
     }
     
     if (key == 's') {

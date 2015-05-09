@@ -24,6 +24,7 @@ public:
     
     void chapterCut(float chapterBeginning, float chapterEnd);
     void setSeq(float seqPosition);
+    void setSeqRandom();
     
     ofImage menuImg;
     ofTrueTypeFont CousineRegular;
