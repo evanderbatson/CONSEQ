@@ -19,6 +19,12 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
+    void drawVideo();
+    void drawMenu();
+    
+    void chapterCut(float chapterBeginning, float chapterEnd);
+    void setSeq(float seqPosition);
+    
     ofImage menuImg;
     ofTrueTypeFont CousineRegular;
     

@@ -1,5 +1,5 @@
 # CONSEQ (V 0.0)
-## CONtrol SEQuencer for video
+## CONtrol SEQuencer for live video editing
 
 An openFrameworks app for live-editing video art for multimedia performances.
 
