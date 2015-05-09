@@ -1,4 +1,6 @@
 # CONSEQ (V 0.0)
+## CONtrol SEQuencer for video
+
 An openFrameworks app for live-editing video art for multimedia performances.
 
 Version 0.0 - This project is currently in a pre-production planning phase. Check back soon!
@@ -7,6 +9,7 @@ Version 0.0 - This project is currently in a pre-production planning phase. Chec
 ## Development Team
 
 ENGINEER - [Evander Batson](http://evanderbatson.com) 
+
 DESIGNER - [Heloise Cullen](http://heloisecullen.org)
 
 ## Key Controls
