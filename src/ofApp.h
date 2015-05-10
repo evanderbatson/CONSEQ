@@ -26,6 +26,7 @@ public:
     void setSeq(float seqPosition);
     void setSeqRandom();
     void setSeqMotion(float motion);
+    void toggleFullScreen();
     
     ofImage menuImg;
     ofTrueTypeFont CousineRegular;

@@ -41,7 +41,7 @@ key          | function
 [ [ ] | linear loop (default)
 [ ] ] | palindrome loop
 [ \ ] | no loop
-[ control ] | window/full screen
+[ return ] | window/full screen
 [ esc ] | quit 
 
 

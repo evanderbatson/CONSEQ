@@ -92,6 +92,18 @@ void ofApp::setSeqMotion(float motion){
     }
 }
 
+void ofApp::toggleFullScreen(){
+    ofToggleFullscreen();
+    fullscreen=!fullscreen;
+    
+    if (fullscreen) {
+        ofHideCursor();
+    } else {
+        ofShowCursor();
+    }
+    cout << "fullscreen toggled" << endl;
+}
+
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
     
@@ -242,16 +254,7 @@ void ofApp::keyPressed(int key){
     }
     
     if (key == OF_KEY_RETURN){
-        ofToggleFullscreen();
-        fullscreen=!fullscreen;
-        
-        if (fullscreen) {
-            ofHideCursor();
-        } else {
-            ofShowCursor();
-        }
-        
-        cout << "fullscreen toggled" << endl;
+        toggleFullScreen();
     }
     
 //    if (key){
