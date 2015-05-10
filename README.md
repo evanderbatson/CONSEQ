@@ -3,9 +3,11 @@
 
 An openFrameworks app for live-editing video art for multimedia performances.
 
-Version ALPHA 0.1 - Base functionality has been implemented.
+**Version A0.1:**
 
-planned for version A1:
+-Base functionality has been implemented.
+
+**planned for version A1:**
 
 -graphical interface
 
