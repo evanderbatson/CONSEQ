@@ -25,10 +25,8 @@ Place your video file in '..CONSEQ/bin/data' and name it 'video.mp4' replacing t
 
 ## Key Controls
 
-key | function
-
+key          | function
 ------------ | -------------
-
 [ 1-0 ] | play 0% to play 90%
 [ Q ] | random cut from 0%-10%
 [ P ] | random cut from 90%-100%
@@ -49,11 +47,4 @@ key | function
 
 
 
-**PLANNED NOT YET IMPLEMENTED**
-
------------- | -------------
-
-[ TAB ] | toggle GUI
-[ Z ] | flash!
------------- | -------------
 
