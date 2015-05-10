@@ -20,6 +20,8 @@ void ofApp::setup(){
     sound.loadSound("audio.mp3");
     video.setLoopState(OF_LOOP_NORMAL);
     
+    fullscreen=false;
+    
 }
 
 //--------------------------------------------------------------
@@ -78,6 +80,16 @@ void ofApp::setSeqRandom(){
     float random = ofRandom(0,1);
     cout << "SEQ set to: " << random*100 << "%" << endl;
     video.setPosition(random);
+}
+
+void ofApp::setSeqMotion(float motion){
+    if (video.getSpeed() != motion){
+        video.setSpeed(motion);
+        cout << "Playback speed set to :" << motion << endl;
+    } else {
+        video.setSpeed(1);
+        cout << "Playback speed set to :" << "1" << endl;
+    }
 }
 
 //--------------------------------------------------------------
@@ -167,65 +179,86 @@ void ofApp::keyPressed(int key){
         chapterCut(0.9, 1);
     }
     
-    
-    //etc Q-P
-    
     if (key == 'a') {
         setSeqRandom();
     }
     
     if (key == 's') {
-        //slow playback speed
+        //slow motion
+        setSeqMotion(0.5);
     }
     
     if (key == 'd') {
-        //normal playback speed
+        //normal motion
+        setSeqMotion(1);
+
     }
     
     if (key == 'f') {
-        //fast playback speed
+        //fast motion
+        setSeqMotion(2);
+
     }
     
-    //    if (key == 'spacebar'){
-    //        //toggle play/pause
-    //    }
+    if (key == 'x'){
+        //slow reverse
+        setSeqMotion(-0.5);
+    }
+    
+    if (key == 'c'){
+        //reverse normal
+        setSeqMotion(-1);
+
+    }
+    
+    if (key == 'v'){
+        //reverse fast playback speed
+        setSeqMotion(-2);
+    }
+    
+    if (key == 32){
+        //toggle play/pause
+        setSeqMotion(0);
+        cout << "!! CONSEQ PAUSED !!" << endl;
+    }
     
     if (key == 'z'){
         //flash!
     }
     
-    if (key == 'x'){
-        //reverse slow playback speed
-    }
-    
-    if (key == 'c'){
-        //reverse normal playback speed
-    }
-    
-    if (key == 'v'){
-        //reverse fast playback speed
-    }
-    
     if (key == '['){
         //set loop mode to linear
+        video.setLoopState(OF_LOOP_NORMAL);
     }
     
     if (key == ']'){
         //set loop mode to palindrome
+        video.setLoopState(OF_LOOP_PALINDROME);
     }
     
-    //
-    //    if (key == '\'){
-    //        //set loop mode to none
-    //        }
-    //
-    //    if (key == 'command+f'){
-    //        //toggle window/fullscreen mode
-    //        }
-    //
-    //    if (key == 'esc'){
-    //
-    //        }
+    if (key == 92){
+        //set loop mode to none
+        video.setLoopState(OF_LOOP_NONE);
+    }
+    
+    if (key == OF_KEY_RETURN){
+        ofToggleFullscreen();
+        fullscreen=!fullscreen;
+        
+        if (fullscreen) {
+            ofHideCursor();
+        } else {
+            ofShowCursor();
+        }
+        
+        cout << "fullscreen toggled" << endl;
+    }
+    
+//    if (key){
+//        //DEBUG
+//        cout << key << endl;
+//    }
+
 }
 
 //--------------------------------------------------------------

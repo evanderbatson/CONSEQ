@@ -25,11 +25,15 @@ public:
     void chapterCut(float chapterBeginning, float chapterEnd);
     void setSeq(float seqPosition);
     void setSeqRandom();
+    void setSeqMotion(float motion);
     
     ofImage menuImg;
     ofTrueTypeFont CousineRegular;
     
     ofVideoPlayer video;
     ofSoundPlayer sound;
+    
+    int videoSpeed;
+    bool fullscreen;
     
 };
