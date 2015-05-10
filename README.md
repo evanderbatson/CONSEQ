@@ -43,7 +43,6 @@ key          | function
 [ \ ] | no loop
 [ control ] | window/full screen
 [ esc ] | quit 
------------- | -------------
 
 
 planned functions for A1
@@ -52,5 +51,4 @@ key          | function
 ------------ | -------------
 [ TAB ] | toggle GUI
 [ Z ] | flash!
------------- | -------------
 
