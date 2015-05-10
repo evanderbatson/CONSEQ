@@ -5,8 +5,10 @@ An openFrameworks app for live-editing video art for multimedia performances.
 
 Version ALPHA 0.1 - Base functionality has been implemented.
 
-TO COME:
--interface
+planned for version A1:
+
+-graphical interface
+
 
  -----------
 ## Development Team
@@ -47,7 +49,7 @@ Place your video file in '..CONSEQ/bin/data' and name it 'video.mp4' replacing t
 **PLANNED NOT YET IMPLEMENTED**
 
 ------------ | -------------
-[ TAB ] | toggle gui
+[ TAB ] | toggle GUI
 [ Z ] | flash!
 ------------ | -------------
 
