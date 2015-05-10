@@ -46,5 +46,11 @@ key          | function
 ------------ | -------------
 
 
+planned functions for A1
 
+key          | function
+------------ | -------------
+[ TAB ] | toggle GUI
+[ Z ] | flash!
+------------ | -------------
 
