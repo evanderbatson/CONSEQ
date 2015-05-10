@@ -25,7 +25,7 @@ Place your video file in '..CONSEQ/bin/data' and name it 'video.mp4' replacing t
 
 ## Key Controls
 
-**key** | **function**
+key | function
 
 ------------ | -------------
 
