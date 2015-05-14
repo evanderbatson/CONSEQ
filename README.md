@@ -1,16 +1,11 @@
-# CONSEQ (V A0.1)
+# CONSEQ (V A1.0)
 ## CONtrol SEQuencer for live video editing
 
 An openFrameworks app for live-editing video art for multimedia performances.
 
-**Version A0.1:**
+**Version A1.0:**
 
--Base functionality has been implemented.
-
-**planned for version A1:**
-
--graphical interface
-
+-Base functionality and interface has been implemented.
 
  -----------
 ## Development Team
@@ -21,15 +16,14 @@ DESIGN AND INTERFACE - [Heloise Cullen](http://heloisecullen.org)
 
 # HOW TO USE
 
-Place your video file in '..CONSEQ/bin/data' and name it 'video.mp4' replacing the default. Position the window into the desired screen and press RETURN to fullscreen. Consult the keycodes below to control the video as desired.
+Place your video file in '..CONSEQ/bin/data/' and name it 'video.mp4' replacing the default. Position the window into the desired screen and press RETURN to fullscreen. Consult the keycodes below to control the video as desired.
 
 ## Key Controls
 
 key          | function
 ------------ | -------------
 [ 1-0 ] | play 0% to play 90%
-[ Q ] | random cut from 0%-10%
-[ P ] | random cut from 90%-100%
+[ Q-P ] | random cut from 0%-10% to 0%-100%
 [ A ] | random cut (entire sequence)
 [ S ] | slow motion
 [ D ] | normal motion
@@ -45,10 +39,19 @@ key          | function
 [ esc ] | quit 
 
 
-planned functions for A1
+## Planned For Future Versions
+
+**controls**
 
 key          | function
 ------------ | -------------
 [ TAB ] | toggle GUI
 [ Z ] | flash!
+[ M ] | mute sound
+
+**features**
+- GUI active function feedback
+- GUI playback timeline |-|-|-|-|-|
+- GUI video loader
+- app installer
 
