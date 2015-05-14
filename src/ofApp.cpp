@@ -13,7 +13,6 @@ void ofApp::setup(){
     //loading images
     
     interfaceImg.loadImage("interfaceImg.png");
-//    menuImg.loadImage("menuImg.jpg");
     
     //loading videos
     
