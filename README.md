@@ -1,7 +1,7 @@
 # CONSEQ (V A1.0)
 ## Tool for live video editing
 
-![ScreenShot](/bin/data/screenshot.jpg)
+![ScreenShot](/bin/data/logo.png)
 
 CONSEQ (video controller/sequencer) is an openFrameworks app for controlling dynamic video art for multimedia performances. With the stroke of the keyboard, instantaneously live-cut video projections to sync up with performances – no matter what is currently happening on stage. 
 
