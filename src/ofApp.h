@@ -21,6 +21,7 @@ public:
     
     void drawVideo();
     void drawMenu();
+    void drawInterface();
     
     void chapterCut(float chapterBeginning, float chapterEnd);
     void setSeq(float seqPosition);
@@ -28,13 +29,14 @@ public:
     void setSeqMotion(float motion);
     void toggleFullScreen();
     
-    ofImage menuImg;
-    ofTrueTypeFont CousineRegular;
+    ofImage interfaceImg;
+    ofTrueTypeFont LatoLight;
     
     ofVideoPlayer video;
     ofSoundPlayer sound;
     
     int videoSpeed;
     bool fullscreen;
+    bool interface;
     
 };

@@ -8,11 +8,12 @@ void ofApp::setup(){
     
     //loading typefaces
     
-    CousineRegular.loadFont("Cousine-Regular.ttf", 8);
+    LatoLight.loadFont("Lato-Light.ttf", 8);
     
     //loading images
     
-    menuImg.loadImage("menuImg.jpg");
+    interfaceImg.loadImage("interfaceImg.png");
+//    menuImg.loadImage("menuImg.jpg");
     
     //loading videos
     
@@ -21,6 +22,7 @@ void ofApp::setup(){
     video.setLoopState(OF_LOOP_NORMAL);
     
     fullscreen=false;
+    interface=true;
     
 }
 
@@ -34,6 +36,8 @@ void ofApp::draw(){
     
     drawVideo();
     
+    drawInterface();
+    
 }
 
 void ofApp::drawVideo() {
@@ -43,25 +47,15 @@ void ofApp::drawVideo() {
     
 }
 
+void ofApp::drawInterface() {
+    
+    if (interface){
+     interfaceImg.draw(0,0,ofGetWidth(), ofGetHeight());
+    }
+    
+}
+
 void ofApp::drawMenu() {
-    
-    // pause the video
-    
-    video.setPaused(true);
-    
-    // draw the menu
-    
-    menuImg.draw(0,0,ofGetWidth(), ofGetHeight());
-    
-    ofSetColor(98,90,229);
-    string menuTitle;
-    menuTitle += "A sequence controler for live-editing video art multimedia performances.";
-    
-    int menuPosX = ofGetWidth()*.2;
-    int menuPosY = ofGetHeight()*.22;
-    
-    CousineRegular.drawString(menuTitle, menuPosX, menuPosY);
-    ofSetColor(255);
     
 }
 
@@ -110,43 +104,43 @@ void ofApp::keyPressed(int key){
     //sequence percent cuts
     
     if (key == '0') {
-        setSeq(0.0);
+        setSeq(0.9);
     }
     
     if (key == '1') {
-        setSeq(0.1);
+        setSeq(0.0);
     }
     
     if (key == '2') {
-        setSeq(0.2);
+        setSeq(0.1);
     }
     
     if (key == '3') {
-        setSeq(0.3);
+        setSeq(0.2);
     }
     
     if (key == '4') {
-        setSeq(0.4);
+        setSeq(0.3);
     }
     
     if (key == '5') {
-        setSeq(0.5);
+        setSeq(0.4);
     }
     
     if (key == '6') {
-        setSeq(0.6);
+        setSeq(0.5);
     }
     
     if (key == '7') {
-        setSeq(0.7);
+        setSeq(0.6);
     }
     
     if (key == '8') {
-        setSeq(0.8);
+        setSeq(0.7);
     }
     
     if (key == '9') {
-        setSeq(0.9);
+        setSeq(0.8);
     }
     
     //random chapter cuts
@@ -253,12 +247,17 @@ void ofApp::keyPressed(int key){
         video.setLoopState(OF_LOOP_NONE);
     }
     
+    if (key == 9){
+        //toggle interface
+        interface=!interface;
+    }
+    
     if (key == OF_KEY_RETURN){
         toggleFullScreen();
     }
     
 //    if (key){
-//        //DEBUG
+//        //DEBUG - KEYCODE FINDER
 //        cout << key << endl;
 //    }
 
