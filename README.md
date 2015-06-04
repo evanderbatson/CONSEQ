@@ -41,15 +41,14 @@ key          | function
 [ \ ] | no loop
 [ return ] | window/full screen
 [ esc ] | quit 
+[ TAB ] | toggle GUI
 
-
-## Planned For Future Versions
+## Planned Features
 
 **controls**
 
 key          | function
 ------------ | -------------
-[ TAB ] | toggle GUI
 [ Z ] | flash!
 [ M ] | mute sound
 [ < ] | darken projection
@@ -57,8 +56,10 @@ key          | function
 
 **features**
 - GUI active function feedback
+- GUI state toggle feedback
+- GUI console
 - GUI playback timeline |-|-|-|-|-|
 - GUI video loader
-- double window outputs
-- app installer
+- multiple window outputs
+- standalone app installer
 
