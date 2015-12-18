@@ -1,4 +1,4 @@
-# CONSEQ (V A1.0)
+# CONSEQ (V A1.0) for OpenFrameworks
 ## Performance art tool for live video editing
 
 ![ScreenShot](/bin/data/logo.png)
