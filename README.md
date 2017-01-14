@@ -16,7 +16,7 @@ With CONSEQ, you can take masterful control of your custom-made visuals at any c
 
 CONCEPT AND ENGINEERING - [Evander Batson](http://evanderbatson.com) 
 
-DESIGN AND INTERFACE - [Heloise Cullen](http://heloisecullen.org)
+DESIGN AND INTERFACE - [Heloise Cullen](http://heloisecullen.net)
 
 # HOW TO USE
 
